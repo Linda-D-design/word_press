@@ -60,7 +60,10 @@ $custom_field = get_field('custom_field_name');
 					
 		</div><!-- .main-content -->		
 	</div><!-- #primary -->
-	<div class="link">
-	<p><a href="<?php echo site_url('/case-studies/') ?>"><-- BACK TO WORK</a></p>
-	</div>
+
+	<nav id="navigation" class="container">
+	<div class="left"><a href="<?php echo site_url('/case-studies/') ?>">&larr; <span>Back to work</span></a></div>
+</nav>
+
+	
 <?php get_footer(); ?>

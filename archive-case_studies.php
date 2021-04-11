@@ -12,12 +12,12 @@ get_header(); ?>
             $size="full";
             $services = get_field('services'); ?>
 
-    <article class="-case-study">
+    <article class="case-study">
     <div class="archive-case-study">
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<h6><?php echo $services; ?></h6>
+		<h5><?php echo $services; ?></h5>
 		<?php the_excerpt(); ?>
-		<p><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></p>
+		<h6><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></h6>
 </div>
 
 <div class="archive-case-study-images">
@@ -25,12 +25,13 @@ get_header(); ?>
 	<?php if($image_1) {
 		echo wp_get_attachment_image( $image_1, $size );
 	 } ?> </a>
-            
+        </div>
+	    </article>    
         <?php endwhile; // end of the loop. ?>
-    </div>
-		</div>
-	</article>
-    </div>
+            </div>
+		    </div>
+        
+    
     
 
     <?php get_footer(); ?>
